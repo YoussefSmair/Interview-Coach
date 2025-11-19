@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav {
+    background-color: #111;
+    padding: 15px 0;
+    border-radius: 0px 0px 120px 120px;
+    box-shadow: 0 0 10px rgb(195, 195, 195);
+    animation: goldenNavGlow 20s infinite ease-in-out;
+}
+
+@keyframes goldenNavGlow {
+    0%   { box-shadow: 0 0 23px #c87f0a; }
+    25%  { box-shadow: 0 0 23px #f39c12; }
+    50%  { box-shadow: 0 0 23px #f9d976; }
+    75%  { box-shadow: 0 0 23px #ffffff; }
+    100% { box-shadow: 0 0 23px #c87f0a; }
+}
+
+nav h1 a {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-family: serif;
+    font-style: italic;
+}
+nav h1 a:hover{
+    color: #f1ecec;
+    transition: color 0.3s ease;
+
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    font-size: 19px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #f39c12;
+    color: #111;
+    transition: 0.3s;
+}
+
+.hero-image {
+    background-image: url("../img/img.jpg"); /* غيّر المسار حسب مكان الصورة */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-image h1 {
+    font-size: 40px;
+    background: linear-gradient(70deg, #f39c12, gold); /* هنا بتغير الألوان */
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    text-shadow: 0px 0px 30px #00000065;
+    margin-bottom: 10px;
+}
+
+.hero-image p {
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 0px 0px 20px #000;
+}
+
+.features {
+    padding: 50px 30px;
+    background-color: #222;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #f9d976;
+    margin-bottom: 30px;
+    background: linear-gradient(70deg, #f39c12, gold); /* هنا بتغير الألوان */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 20px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    font-size: 25px;
+
+    
+}
+
+.features i {
+    color: #f39c12;
+    font-size: 22px;
+}
+
+.cta {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #3b3b3b65;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.start-btn {
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: #111;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons li a {
+    color: #f39c12;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #fff;
+}

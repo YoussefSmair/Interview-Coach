@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Page</title>
+    <link rel="stylesheet" href="css/hr2.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1><a href="index.html">Interview Coach</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hr.html" class="active">Interview</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Sidebar - الوظائف -->
+        <aside class="sidebar">
+            <h3>  Choose the job </h3>
+            <button onclick="startInterview('admin1')">المحاسب المالي</button>
+            <button onclick="startInterview('admin2')">العلاقات العامة</button>
+            <button onclick="startInterview('tourism1')">محلل بيانات سياحيه </button>
+            <button onclick="startInterview('tourism2')">التسويق السياحي </button>
+        </aside>
+
+        <!-- Interview Content - المقابلة -->
+        <section class="interview-content">
+            <h2 id="question">ابدأ مع Coach</h2>
+            <input type="text" id="text-answer" placeholder="اكتب إجابتك هنا">
+            <div id="choices"></div>
+            <button id="submit" onclick="submitAnswer()">Send Your Text</button>
+            <p id="result"></p>
+        </section>
+
+    </main>
+
+    <script src="js/hr.js"></script>
+</body>
+</html>

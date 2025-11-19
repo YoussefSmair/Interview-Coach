@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222222; /* خلفية داكنة جداً تعطي مظهر فاخر */
+    color: #fff; /* نص أبيض سهل القراءة */
+    line-height: 1.6;
+    direction: rtl;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 50px;
+    background-color: #333; /* خلفية داكنة داخلية */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* تأثير الظل لزيادة الفخامة */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #f39c12; /* برتقالي متألق */
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif; /* اختيار خط مميز */
+    text-transform: uppercase; /* لإعطاء طابع قوي */
+}
+
+header p {
+    font-size: x-large;
+    color: #c5c5c5; 
+
+}
+
+section h2 {
+    font-size: 2.8em;
+    color: snow; /* ذهبي لامع */
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ol li {
+    background-color: #444; /* خلفية داكنة لتمييز الكورسات */
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 6px solid #f39c12; /* شريط برتقالي أنيق */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease; /* تأثير الحركة */
+}
+
+ol li:hover {
+    transform: translateY(-5px); /* تأثير رفع عند المرور */
+}
+
+ol li h3 {
+    font-size: 2em;
+    color: #f39c12; /* برتقالي لامع */
+    margin-bottom: 12px;
+}
+
+
+ol li p {
+    font-size: 1.2em;
+    color: #f0f2f4; /* نص رمادي فاتح لسهولة القراءة */
+    margin-bottom: 15px;
+}
+
+a {
+    
+    background: linear-gradient(70deg, green, #03ff85); /* هنا بتغير الألوان */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #ecf0f1; /* تأثير تغيير اللون عند المرور */
+
+    transition: color 0.3s ease;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+

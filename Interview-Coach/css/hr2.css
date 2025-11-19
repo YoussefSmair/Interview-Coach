@@ -1,0 +1,416 @@
+/* الجزء الموجود بالفعل من تنسيقاتك */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222222;
+    color: #fff;
+    line-height: 1.6;
+    direction: rtl;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    max-width: 1200px;
+    height: 700px;
+    margin: 145px auto;
+    padding: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+    animation: goldenGlow 20s infinite ease-in-out;
+}
+@keyframes goldenGlow {
+    0%   { box-shadow: 0 0 23px #ffffff; }
+    25%  { box-shadow: 0 0 23px #f9d976; }
+    50%  { box-shadow: 0 0 23px #f39c12; }
+    75%  { box-shadow: 0 0 23px #c87f0a; }
+    100% { box-shadow: 0 0 23px #ffffff; }
+  }
+.nav-container{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+nav {
+    background-color: #111;
+    padding: 15px 0;
+    border-radius: 0px  0px  120px  120px;
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+    animation: goldenNavGlow 20s infinite ease-in-out;
+
+
+}
+@keyframes goldenNavGlow {
+    0%   { box-shadow: 0 0 23px #c87f0a; }
+    25%  { box-shadow: 0 0 23px #f39c12; }
+    50%  { box-shadow: 0 0 23px #f9d976; }
+    75%  { box-shadow: 0 0 23px #ffffff; }
+    100% { box-shadow: 0 0 23px #c87f0a; }
+  }
+nav h1 a {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-family:  serif;
+    font-style: italic;
+margin-left: 80px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    margin-right: 80px;
+    font-size: 19px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+
+}
+
+
+
+
+
+
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #f39c12;
+    color: #111;
+    transition: 0.3s;
+}
+
+
+h3{
+
+text-align: center;
+font-family: ' san-serif';
+font-size: 25px;
+color: #ffffff;
+text-shadow: 5px 5px 10px #000000;
+
+}
+
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar button {
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #444;
+    color: #f39c12;
+    border: 2px solid #f39c12;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #f39c12;
+    color: #111;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+.interview-content {
+    flex: 3;
+    padding: 20px 40px;
+}
+
+
+label{
+
+font-size: 26px;
+
+
+
+
+}
+label:hover{
+    color:  rgb(226, 174, 107);
+}
+
+input[type="radio"] {
+    margin-left: 10px; /* لو الصفحة RTL حط المسافة على الشمال */
+margin-top:30px;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+.interview-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #f39c12;
+    text-shadow: 5px 5px 10px #000000;
+}
+
+#text-answer {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#choices {
+    margin-bottom: 20px;
+}
+
+#submit {
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #f39c12;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top:25px;
+}
+
+#submit:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #c5c5c5;
+}
+
+/* روابط عامة */
+a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f1ecec;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+#submit-radio{
+
+
+padding: 12px 25px;
+font-size: 1em;
+background-color: #007bc8;
+color: #ffffff;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-top: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query للموبايل */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        padding: 8px 12px;
+        margin-right: 40px;
+    }
+
+    .sidebar button {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .interview-content {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 22px;
+    }
+
+    #text-answer {
+        font-size: 0.9em;
+    }
+
+    #submit {
+        padding: 10px 20px;
+    }
+
+    #submit-radio {
+        padding: 10px 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* جعل الأزرار في التنقل داخل الـ nav أكبر لسهولة الاستخدام على الموبايل */
+    nav ul li a.active,
+    nav ul li a:hover {
+        font-size: 20px;
+    }
+}
+
+/* Media Query للأجهزة اللوحية */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: row-reverse;
+        width: 95%;
+        max-width: 1000px;
+        margin: 50px auto;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .sidebar button {
+        font-size: 22px;
+        padding: 14px;
+    }
+
+    .interview-content {
+        padding: 20px 30px;
+    }
+
+    label {
+        font-size: 24px;
+    }
+
+    #text-answer {
+        font-size: 1em;
+    }
+
+    #submit {
+        padding: 10px 20px;
+    }
+
+    #submit-radio {
+        padding: 10px 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
